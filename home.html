@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إستفهام — لعبة أسئلة للديوانيات واليمعات</title>
+<meta name="description" content="إستفهام: لعبة أسئلة جماعية بين فريقين للديوانيات واليمعات، وتحدٍّ أونلاين بين جوالين. 32 فئة وقرابة 6000 سؤال، والنتيجة على شاشة التلفزيون.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #0E1726; --surface: #16223A; --cream: #F3EEE3; --muted: #A9B1C1; --gold: #D8B46A; --border: rgba(243,238,227,.10); }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--cream); font: 17px/1.8 "Segoe UI", Tahoma, Arial, sans-serif; }
+  a { color: var(--gold); }
+  main { max-width: 960px; margin: 0 auto; padding: 0 20px 64px; }
+  nav { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: center; padding: 18px 0; font-size: 15px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--gold); }
+  .hero { text-align: center; padding: 32px 0 8px; }
+  .hero img { width: 120px; height: 120px; border-radius: 28px; }
+  h1 { font-size: 40px; margin: 16px 0 4px; }
+  .tagline { color: var(--gold); font-size: 20px; font-weight: 600; margin: 0 0 8px; }
+  .lead { color: var(--muted); max-width: 640px; margin: 0 auto; }
+  h2 { font-size: 26px; margin: 56px 0 16px; }
+  h2 small { color: var(--muted); font-size: 15px; font-weight: 400; margin-inline-start: 8px; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; scrollbar-color: rgba(216,180,106,.45) transparent; }
+  .shots img { height: 460px; width: auto; border-radius: 20px; border: 1px solid var(--border); scroll-snap-align: start; flex: none; }
+  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 18px 14px 18px; display: flex; gap: 14px; align-items: flex-start; }
+  .steps li::before { content: counter(s); flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: var(--bg); font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 6px 20px 10px; }
+  .card h3 { color: var(--gold); font-size: 18px; margin: 12px 0 4px; }
+  .card p { margin: 0 0 6px; color: var(--cream); }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .links a { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; text-decoration: none; color: var(--cream); font-weight: 600; }
+  .links a span { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
+  .links a:hover { border-color: rgba(216,180,106,.45); }
+  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 56px; }
+  @media (max-width: 600px) { h1 { font-size: 32px; } .shots img { height: 380px; } }
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <a href="#shots">صور اللعبة</a>
+    <a href="#play">طريقة اللعب</a>
+    <a href="#online">أونلاين</a>
+    <a href="#features">المميزات</a>
+    <a href="#help">الدعم</a>
+    <a href="privacy.html">الخصوصية</a>
+    <a href="credits.html">حقوق الصور</a>
+  </nav>
+
+  <section class="hero">
+    <img src="icon.png" alt="أيقونة إستفهام">
+    <h1>إستفهام</h1>
+    <p class="tagline">لعبة أسئلة بين فريقين للديوانيات واليمعات</p>
+    <p class="lead">واحد يمسك الجوال ويقدّم، والفريقان يتنافسون على النقاط، والنتيجة تظهر على شاشة التلفزيون. 32 فئة وقرابة 6000 سؤال، وأول لعبة مجاناً.</p>
+  </section>
+
+  <h2 id="shots">صور اللعبة</h2>
+  <div class="shots">
+    <img src="shots/1-home.png" alt="الشاشة الرئيسية" loading="lazy">
+    <img src="shots/2-categories.png" alt="اختيار الفئات" loading="lazy">
+    <img src="shots/3-board.png" alt="لوحة الأسئلة" loading="lazy">
+    <img src="shots/4-question.png" alt="سؤال بالصورة" loading="lazy">
+    <img src="shots/5-answer.png" alt="كشف الإجابة" loading="lazy">
+    <img src="shots/7-results.png" alt="النتيجة النهائية" loading="lazy">
+  </div>
+
+  <h2 id="play">طريقة اللعب</h2>
+  <ol class="steps">
+    <li>سمّوا الفريقين، واختاروا من يبدأ.</li>
+    <li>اختاروا 6 فئات من بين 32 فئة.</li>
+    <li>تظهر لوحة من 36 سؤالاً: 200 و400 و600 نقطة لكل فئة.</li>
+    <li>الفريق صاحب الدور يختار سؤالاً، ويجاوب قبل انتهاء الوقت.</li>
+    <li>المقدّم يكشف الإجابة ويحدد من جاوب صح بضغطة، وتنتقل النقاط.</li>
+    <li>بعد آخر سؤال يفوز الفريق صاحب النقاط الأعلى.</li>
+  </ol>
+
+  <h2 id="online">العب أونلاين <small>كل لاعب بجواله</small></h2>
+  <p>ما تقدرون تجتمعون؟ تحدَّ صاحبك من جواله، وين ما كان.</p>
+  <ol class="steps">
+    <li>من الشاشة الرئيسية اضغط «العب أونلاين»، وسوِّ غرفة.</li>
+    <li>أرسل كود الغرفة (6 أرقام) لصاحبك، ويدخل فيه من جواله.</li>
+    <li>كل لاعب يختار 3 فئات، فتصير 6 فئات و30 سؤالاً.</li>
+    <li>الاثنان يجاوبان على كل سؤال، كل واحد من جواله، والإجابة الصحيحة تكسب النقاط.</li>
+    <li>بعد آخر سؤال تظهر النتيجة والفائز، وتقدرون تلعبون جولة ثانية.</li>
+  </ol>
+
+  <h2 id="features">المميزات</h2>
+  <div class="grid">
+    <div class="card"><h3>32 فئة</h3><p>الكويت، الخليج، معالم العالم، أعلام الدول، كرة القدم، العلوم، الفضاء، التاريخ، أمثال شعبية، أكلات كويتية، ألغاز، وغيرها.</p></div>
+    <div class="card"><h3>صور و«دندنها»</h3><p>أسئلة بالصور، وأسئلة «دندنها»: واحد من الفريق يدندن الأغنية بدون كلام، والباقي يخمّنون.</p></div>
+    <div class="card"><h3>وسائل مساعدة</h3><p>«دبل» يضاعف النقاط، و«إجابتان» تعطي فرصتين، و«استريح» يريّح لاعباً من الفريق الخصم.</p></div>
+    <div class="card"><h3>على التلفزيون</h3><p>اعرضوا اللوحة والأسئلة والنتيجة عبر Chromecast أو متصفح التلفزيون، والجوال يبقى بيد المقدّم.</p></div>
+    <div class="card"><h3>أول لعبة مجاناً</h3><p>بعدها لعبة أو أكثر، أو باقة 5 ألعاب بسعر أوفر. الألعاب محفوظة في حسابك على كل أجهزتك.</p></div>
+  </div>
+
+  <h2 id="help">الدعم</h2>
+  <div class="links">
+    <a href="mailto:nasseralmajdali@gmail.com?subject=%D8%A5%D8%B3%D8%AA%D9%81%D9%87%D8%A7%D9%85">البريد الإلكتروني<span>nasseralmajdali@gmail.com</span></a>
+    <a href="https://wa.me/96594444658">واتساب<span dir="ltr">+965 9444 4658</span></a>
+    <a href="support.html">الأسئلة الشائعة<span>المشتريات، التلفزيون، الحساب</span></a>
+  </div>
+
+  <h2>الصفحات</h2>
+  <div class="links">
+    <a href="privacy.html">سياسة الخصوصية<span>ما نجمعه من بيانات ولماذا</span></a>
+    <a href="delete-account.html">حذف الحساب<span>من اللعبة أو بالبريد</span></a>
+    <a href="credits.html">حقوق الصور والأصوات<span>المؤلفون والرخص</span></a>
+  </div>
+
+  <footer>© 2026 Nasser almajdali · إستفهام</footer>
+</main>
+</body>
+</html>
