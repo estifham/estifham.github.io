@@ -33,8 +33,8 @@
   <p>تستطيع لعب اللعبة المجانية بدون تسجيل دخول. تُحفظ هذه البيانات <strong>على جهازك فقط</strong> ولا تُرسل لأي مكان: أسماء الفرق والنقاط، اللعبة الجارية لمتابعتها لاحقاً، والأسئلة التي لُعبت حتى لا تتكرر. تُحذف كلها بحذف اللعبة من الجهاز.</p>
   <p><strong>عدد الألعاب المجانية:</strong> حتى لا تتكرر اللعبة المجانية بحذف اللعبة وتثبيتها من جديد، نحفظ لدى Google Firebase عدد الألعاب المجانية المستخدمة على جهازك، مربوطاً بمعرّف مشفّر للجهاز (بصمة SHA-256 لمعرّف الجهاز، فلا يُرسل المعرّف نفسه). لا يرتبط هذا السجل باسمك أو بريدك، ولا يُستخدم لأي غرض آخر.</p>
 
-  <h2>2. الحساب (عند الشراء فقط)</h2>
-  <p>يُطلب تسجيل الدخول فقط عند شراء لعبة، حتى تبقى مشترياتك محفوظة. عند التسجيل بحساب Google أو Apple أو بالبريد الإلكتروني نحفظ: البريد الإلكتروني (ومع Apple قد يكون بريداً مخفياً من Apple)، والاسم إن وُجد في الحساب، ومعرّفاً داخلياً للحساب، وعدد الألعاب المشتراة غير المستخدمة. تُحفظ هذه البيانات لدى خدمة Google Firebase.</p>
+  <h2>2. الحساب (اختياري)</h2>
+  <p>لا يلزم تسجيل الدخول للعب ولا للشراء. بدون تسجيل تُحفظ الألعاب المشتراة مع معرّف داخلي مجهول لهذا الجهاز (بدون أي بيانات شخصية). تسجيل الدخول اختياري، ويتيح لعب ألعابك المشتراة من أي جهاز. عند التسجيل بحساب Google أو Apple أو بالبريد الإلكتروني نحفظ: البريد الإلكتروني (ومع Apple قد يكون بريداً مخفياً من Apple)، والاسم إن وُجد في الحساب، ومعرّفاً داخلياً للحساب، وعدد الألعاب المشتراة غير المستخدمة. تُحفظ هذه البيانات لدى خدمة Google Firebase.</p>
 
   <h2>3. المشتريات</h2>
   <p>تتم عمليات الشراء عبر متجر Google Play (أو App Store). لا نرى ولا نحفظ بيانات بطاقتك أو وسيلة الدفع. يتحقق خادمنا (Google Firebase) من كل عملية شراء مع Google Play ثم يضيف الألعاب إلى حسابك، ونحفظ سجلاً للعملية (رقم الطلب ونوع المنتج وعدد الألعاب والتاريخ ومعرّف حسابك) حتى لا يُحتسب الشراء مرتين.</p>
@@ -69,8 +69,8 @@
     <h2>1. Playing without an account</h2>
     <p>No sign-in is needed for the free game. Team names, scores, the game in progress and played questions are stored <strong>only on your device</strong> and are removed when you uninstall the app.</p>
     <p><strong>Free-game count:</strong> so the free game is not given again after reinstalling, we store with Google Firebase how many free games were used on your device, keyed by a hashed device identifier (a SHA-256 fingerprint; the identifier itself is never sent). It is not linked to your name or email and is used for nothing else.</p>
-    <h2>2. Account (only to buy games)</h2>
-    <p>Sign-in (Google, Apple or email) is only required to buy games. We then store your email address (with Apple, possibly a private relay address), your name if your account provides one, an internal account ID, and the number of unused purchased games, using Google Firebase.</p>
+    <h2>2. Account (optional)</h2>
+    <p>No sign-in is needed to play or to buy games. Without one, bought games are kept with an anonymous internal ID for this device (no personal data). Signing in (Google, Apple or email) is optional and lets you play your bought games on any device. We then store your email address (with Apple, possibly a private relay address), your name if your account provides one, an internal account ID, and the number of unused purchased games, using Google Firebase.</p>
     <h2>3. Purchases</h2>
     <p>Purchases are processed by Google Play (or the App Store). We never see or store your card or payment details. Our server (Google Firebase) checks each purchase with Google Play, adds the games to your account, and keeps a record of it (order number, product, number of games, date and your account ID) so it is never counted twice.</p>
     <h2>3a. Online play</h2>
