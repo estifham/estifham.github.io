@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>إستفهام — لعبة أسئلة للديوانيات واليمعات</title>
-<meta name="description" content="إستفهام: لعبة أسئلة جماعية بين فريقين للديوانيات واليمعات، وتحدٍّ أونلاين بين جوالين. 52 فئة وأكثر من 9000 سؤال، والنتيجة على شاشة التلفزيون.">
+<title>استفهام — لعبة أسئلة للديوانيات واليمعات</title>
+<meta name="description" content="استفهام: لعبة أسئلة جماعية بين فريقين للديوانيات واليمعات، وتحدٍّ أونلاين بين جوالين. 52 فئة وأكثر من 9000 سؤال، والنتيجة على شاشة التلفزيون.">
 <link rel="icon" href="icon.png">
 <style>
-  :root { --bg: #0E1726; --surface: #16223A; --cream: #F3EEE3; --muted: #A9B1C1; --gold: #D8B46A; --border: rgba(243,238,227,.10); }
+  :root { --bg: #E8F2F4; --surface: #FFFFFF; --cream: #0B1220; --muted: #55657A; --gold: #1963C2; --border: rgba(25,99,194,.18); }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { margin: 0; background: var(--bg); color: var(--cream); font: 17px/1.8 "Segoe UI", Tahoma, Arial, sans-serif; }
@@ -23,7 +23,7 @@
   .lead { color: var(--muted); max-width: 640px; margin: 0 auto; }
   h2 { font-size: 26px; margin: 56px 0 16px; }
   h2 small { color: var(--muted); font-size: 15px; font-weight: 400; margin-inline-start: 8px; }
-  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; scrollbar-color: rgba(216,180,106,.45) transparent; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; scrollbar-color: rgba(25,99,194,.35) transparent; }
   .shots img { height: 460px; width: auto; border-radius: 20px; border: 1px solid var(--border); scroll-snap-align: start; flex: none; }
   .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
   .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 18px 14px 18px; display: flex; gap: 14px; align-items: flex-start; }
@@ -35,7 +35,7 @@
   .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
   .links a { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; text-decoration: none; color: var(--cream); font-weight: 600; }
   .links a span { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
-  .links a:hover { border-color: rgba(216,180,106,.45); }
+  .links a:hover { border-color: rgba(25,99,194,.35); }
   .online { display: flex; gap: 20px; align-items: flex-start; }
   .online img { height: 420px; width: auto; border-radius: 20px; border: 1px solid var(--border); flex: none; }
   .online .steps { flex: 1; }
@@ -57,8 +57,8 @@
   </nav>
 
   <section class="hero">
-    <img src="icon.png" alt="أيقونة إستفهام">
-    <h1>إستفهام</h1>
+    <img src="icon.png" alt="أيقونة استفهام">
+    <h1>استفهام</h1>
     <p class="tagline">لعبة أسئلة بين فريقين للديوانيات واليمعات</p>
     <p class="lead">واحد يمسك الجوال ويقدّم، والفريقان يتنافسون على النقاط، والنتيجة تظهر على شاشة التلفزيون. 52 فئة وأكثر من 9000 سؤال، وأول لعبة مجاناً.</p>
   </section>
@@ -78,7 +78,7 @@
   <ol class="steps">
     <li>سمّوا الفريقين، واختاروا من يبدأ.</li>
     <li>اختاروا 6 فئات من بين 52 فئة.</li>
-    <li>تظهر لوحة من 36 سؤالاً: 200 و400 و600 نقطة لكل فئة.</li>
+    <li>تظهر لوحة من 36 سؤالاً: من 100 إلى 600 نقطة لكل فئة، والأصعب بنقاط أكثر.</li>
     <li>الفريق صاحب الدور يختار سؤالاً، ويجاوب قبل انتهاء الوقت.</li>
     <li>المقدّم يكشف الإجابة ويحدد من جاوب صح بضغطة، وتنتقل النقاط.</li>
     <li>بعد آخر سؤال يفوز الفريق صاحب النقاط الأعلى.</li>
@@ -91,7 +91,7 @@
   <ol class="steps">
     <li>من الشاشة الرئيسية اضغط «العب أونلاين»، وسوِّ غرفة.</li>
     <li>أرسل كود الغرفة (6 أرقام) لصاحبك، ويدخل فيه من جواله.</li>
-    <li>كل لاعب يختار 3 فئات، فتصير 6 فئات و30 سؤالاً.</li>
+    <li>كل لاعب يختار 3 فئات، فتصير 6 فئات و36 سؤالاً.</li>
     <li>الاثنان يجاوبان على كل سؤال، كل واحد من جواله، والإجابة الصحيحة تكسب النقاط.</li>
     <li>بعد آخر سؤال تظهر النتيجة والفائز، وتقدرون تلعبون جولة ثانية.</li>
   </ol>
@@ -101,7 +101,7 @@
   <div class="grid">
     <div class="card"><h3>52 فئة</h3><p>الكويت، لهجة كويتية، أهل البحر، أهل البر، الخليج، كأس الخليج، الدوري الكويتي، مسلسلات خليجية، معالم العالم، أعلام الدول، خرايط، كرة القدم، كأس العالم، العلوم، التاريخ، السيرة النبوية، أمثال وحكم، أكلات، كرتون زمان، ألغاز، وغيرها.</p></div>
     <div class="card"><h3>صور و«دندنها»</h3><p>أسئلة بالصور، وأسئلة «دندنها»: واحد من الفريق يدندن الأغنية بدون كلام، والباقي يخمّنون.</p></div>
-    <div class="card"><h3>وسائل مساعدة</h3><p>«دبل» يضاعف النقاط، و«إجابتان» تعطي فرصتين، و«استريح» يريّح لاعباً من الفريق الخصم.</p></div>
+    <div class="card"><h3>وسائل مساعدة</h3><p>«دبل» يضاعف النقاط، و«إجابتان» تعطي فرصتين، و«استريح» يريّح لاعباً من الفريق الخصم، و«بوق السؤال» ياخذ سؤال الخصم.</p></div>
     <div class="card"><h3>على التلفزيون</h3><p>اعرضوا اللوحة والأسئلة والنتيجة عبر Chromecast أو متصفح التلفزيون، والجوال يبقى بيد المقدّم.</p></div>
     <div class="card"><h3>أول لعبة مجاناً</h3><p>بعدها لعبة أو أكثر، أو باقة 5 ألعاب بسعر أوفر، بدون تسجيل. وإذا سجلت الدخول تنتقل ألعابك معك لكل أجهزتك.</p></div>
   </div>
@@ -120,7 +120,7 @@
     <a href="credits.html">حقوق الصور والأصوات<span>المؤلفون والرخص</span></a>
   </div>
 
-  <footer>© 2026 Nasser almajdali · إستفهام</footer>
+  <footer>© 2026 Nasser almajdali · استفهام</footer>
 </main>
 </body>
 </html>
