@@ -16,25 +16,12 @@
     else if (/Android/i.test(ua)) location.replace('https://play.google.com/store/apps/details?id=com.estifham.app');
   })();
 </script>
-<style>
-  :root { --bg: #E8F2F4; --surface: #FFFFFF; --cream: #0B1220; --muted: #55657A; --blue: #1963C2; }
-  * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-    background: var(--bg); color: var(--cream); font: 17px/1.8 "Segoe UI", Tahoma, Arial, sans-serif; }
-  main { text-align: center; padding: 32px 16px; }
-  .brand { width: 88px; height: 88px; margin: 0 auto; border-radius: 24px; background: #FFFFFF; border: 3px solid #FFBE0C;
-    color: #946500; font-size: 56px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
-  h1 { font-size: 34px; margin: 16px 0 0; }
-  p { color: var(--muted); margin: 4px 0 28px; }
-  .stores { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .stores a { background: var(--blue); color: #FFFFFF; text-decoration: none; font-weight: 700;
-    padding: 12px 26px; border-radius: 999px; direction: ltr; }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="get">
 <main>
-  <div class="brand">؟</div>
-  <h1>استفهام</h1>
+  <img class="brand" src="brand/logo.webp" alt="استفهام">
+  <h1 class="hidden">استفهام</h1>
   <p>تحدي الأسئلة بين فريقين، على التلفزيون. أول لعبة ببلاش.</p>
   <div class="stores">
     <a href="https://apps.apple.com/kw/app/id6819870358">App Store</a>

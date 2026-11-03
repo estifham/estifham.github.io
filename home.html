@@ -6,46 +6,10 @@
 <title>استفهام — لعبة أسئلة للديوانيات واليمعات</title>
 <meta name="description" content="استفهام: لعبة أسئلة جماعية بين فريقين للديوانيات واليمعات، وتحدٍّ أونلاين بين جوالين. فئات كثيرة وآلاف الأسئلة، والنتيجة على شاشة التلفزيون.">
 <link rel="icon" href="icon.png">
-<style>
-  :root { --bg: #E8F2F4; --surface: #FFFFFF; --cream: #0B1220; --muted: #55657A; --gold: #1963C2; --border: rgba(25,99,194,.18); }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--bg); color: var(--cream); font: 17px/1.8 "Segoe UI", Tahoma, Arial, sans-serif; }
-  a { color: var(--gold); }
-  main { max-width: 960px; margin: 0 auto; padding: 0 20px 64px; }
-  nav { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: center; padding: 18px 0; font-size: 15px; }
-  nav a { color: var(--muted); text-decoration: none; }
-  nav a:hover { color: var(--gold); }
-  .hero { text-align: center; padding: 32px 0 8px; }
-  .hero img { width: 120px; height: 120px; border-radius: 28px; }
-  h1 { font-size: 40px; margin: 16px 0 4px; }
-  .tagline { color: var(--gold); font-size: 20px; font-weight: 600; margin: 0 0 8px; }
-  .lead { color: var(--muted); max-width: 640px; margin: 0 auto; }
-  h2 { font-size: 26px; margin: 56px 0 16px; }
-  h2 small { color: var(--muted); font-size: 15px; font-weight: 400; margin-inline-start: 8px; }
-  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 16px; scroll-snap-type: x mandatory; scrollbar-color: rgba(25,99,194,.35) transparent; }
-  .shots img { height: 460px; width: auto; border-radius: 20px; border: 1px solid var(--border); scroll-snap-align: start; flex: none; }
-  .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 14px 18px 14px 18px; display: flex; gap: 14px; align-items: flex-start; }
-  .steps li::before { content: counter(s); flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--gold); color: var(--bg); font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 6px 20px 10px; }
-  .card h3 { color: var(--gold); font-size: 18px; margin: 12px 0 4px; }
-  .card p { margin: 0 0 6px; color: var(--cream); }
-  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
-  .links a { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; text-decoration: none; color: var(--cream); font-weight: 600; }
-  .links a span { display: block; color: var(--muted); font-weight: 400; font-size: 14px; }
-  .links a:hover { border-color: rgba(25,99,194,.35); }
-  .online { display: flex; gap: 20px; align-items: flex-start; }
-  .online img { height: 420px; width: auto; border-radius: 20px; border: 1px solid var(--border); flex: none; }
-  .online .steps { flex: 1; }
-  @media (max-width: 700px) { .online { flex-direction: column; align-items: center; } .online img { height: 380px; } }
-  footer { text-align: center; color: var(--muted); font-size: 14px; margin-top: 56px; }
-  @media (max-width: 600px) { h1 { font-size: 32px; } .shots img { height: 380px; } }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<main>
+<main class="wide">
   <nav>
     <a href="#shots">صور اللعبة</a>
     <a href="#play">طريقة اللعب</a>
@@ -57,8 +21,8 @@
   </nav>
 
   <section class="hero">
-    <img src="icon.png" alt="أيقونة استفهام">
-    <h1>استفهام</h1>
+    <img src="brand/logo.webp" alt="استفهام">
+    <h1 class="hidden">استفهام</h1>
     <p class="tagline">لعبة أسئلة بين فريقين للديوانيات واليمعات</p>
     <p class="lead">واحد يمسك الجوال ويقدّم، والفريقان يتنافسون على النقاط، والنتيجة تظهر على شاشة التلفزيون. فئات كثيرة وآلاف الأسئلة، وأول لعبة مجاناً.</p>
   </section>
